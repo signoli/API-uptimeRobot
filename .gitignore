@@ -1,0 +1,42 @@
+# Flask
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entorno virtual
+venv/
+env/
+.venv/
+
+# Variables de entorno
+.env
+.env.local
+
+# Archivos de desarrollo y testing
+instance/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Archivos de IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos generados por Flask
+*.log
+logs/
+
+# Archivos de base de datos local
+*.sqlite
+*.db
+
+# Archivos de paquetes/distribución
+*.egg-info/
+dist/
+build/

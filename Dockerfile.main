@@ -1,0 +1,17 @@
+# Usar la imagen base de Python
+FROM python:3.10
+
+# Establecer el directorio de trabajo dentro del contenedor
+WORKDIR /app
+
+# Copiar solo los archivos necesarios
+COPY uptime_checker.py main.py ./
+
+# Instalar dependencias sin requirements.txt
+RUN pip install requests python-dotenv
+
+# Crear un volumen para compartir el JSON
+VOLUME /app/data
+
+# Ejecutar el script principal
+CMD ["python", "main.py"]
